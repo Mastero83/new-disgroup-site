@@ -1,0 +1,86 @@
+/* DIS Group – subtle polish layer (keeps original look & feel) */
+html{scroll-behavior:smooth}
+body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility}
+p{line-height:1.65}
+h1,h2,h3{text-wrap:balance}
+:focus-visible{outline:3px solid #319fda;outline-offset:3px}
+img{image-rendering:auto}
+
+/* Buttons: sharper, rounded, smooth */
+a.button{border-radius:8px!important;transition:transform .2s ease,box-shadow .2s ease,background-color .2s ease,color .2s ease,border-color .2s ease!important;font-weight:500}
+a.button:hover{transform:translateY(-2px);box-shadow:0 8px 20px -8px rgba(0,26,63,.35)}
+a.button.orange:hover{box-shadow:0 10px 22px -8px rgba(251,184,21,.65)}
+a.button p{margin:0}
+
+/* Header */
+.row.header.bottom-header{transition:box-shadow .25s ease}
+.row.header.bottom-header.sticky,.row.header.bottom-header.is-sticky,.row.header.bottom-header.fixed{box-shadow:0 6px 24px -14px rgba(0,26,63,.35)}
+.row.header .menu > li > a{transition:color .2s ease}
+
+/* Hero: slightly richer overlay for legibility */
+.row1.bg-image .bg-image:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,26,63,.55) 0%,rgba(0,26,63,.15) 55%,rgba(0,26,63,0) 80%);pointer-events:none}
+.row1.bg-image .blocks-container{position:relative;z-index:2}
+
+/* Service cards (row5): softer corners, gentle lift, equal rhythm */
+.row5 .blocks-group.extra .block.item{border-radius:16px!important;transition:transform .25s ease,box-shadow .25s ease;position:relative;overflow:visible}
+.row5 .blocks-group.extra .block.item:hover{transform:translateY(-4px);box-shadow:0 18px 36px -18px rgba(0,26,63,.35)}
+.row5 .block.item .inner-block.image img{border-radius:10px}
+.row5 .block.item .inner-block.link{margin-top:auto}
+.row5 .block.item .inner-block.link a,.row5 .block.item .inner-block.link p{transition:letter-spacing .2s ease}
+.row5 .block.item.is-new{box-shadow:0 0 0 2px rgba(251,184,21,.85),0 14px 30px -18px rgba(41,35,92,.55)}
+.row5 .block.item.is-new:hover{box-shadow:0 0 0 2px #fbb815,0 18px 36px -16px rgba(41,35,92,.55)}
+
+/* Over ons (row2) */
+.row2 .block.image img{border-radius:16px;box-shadow:0 24px 50px -28px rgba(0,26,63,.45)}
+.row2 .blocks-group.content{border-radius:20px}
+
+/* Sector cards (row11) */
+.row11 .block.item{border-radius:16px!important;transition:transform .25s ease,box-shadow .25s ease,background-color .25s ease}
+.row11 .block.item:hover{transform:translateY(-4px);box-shadow:0 20px 40px -20px rgba(0,26,63,.6)}
+
+/* Client logos (row8) */
+.row8 .blocks-group.slider img{filter:grayscale(1);opacity:.75;transition:filter .3s ease,opacity .3s ease}
+.row8 .blocks-group.slider a:hover img{filter:none;opacity:1}
+
+/* Waarom DIS (row7) */
+.row7 .block.repeater article.item{border-radius:14px!important;transition:transform .25s ease,box-shadow .25s ease,background-color .25s ease}
+.row7 .block.repeater article.item:hover{background-color:#eceff2;box-shadow:0 14px 30px -22px rgba(0,26,63,.35)}
+.row7 .block.repeater .inner-block.icon{flex:0 0 48px;width:48px;text-align:center}
+.row7 .block.repeater .inner-block.text{max-width:none!important}
+.row7 .block.image-wrapper img{border-radius:16px;box-shadow:0 24px 50px -28px rgba(0,26,63,.45)}
+
+/* Post / reference cards (row15, row6) */
+.row15 .overview > a.permalink,.row15 .overview article,.row6 .overview article{border-radius:16px!important;overflow:hidden;transition:transform .25s ease,box-shadow .25s ease;box-shadow:0 2px 6px rgba(0,26,63,.05),0 10px 28px -18px rgba(0,26,63,.25)}
+.row15 .overview > a.permalink:hover,.row15 .overview article:hover,.row6 .overview article:hover{transform:translateY(-4px);box-shadow:0 22px 44px -22px rgba(0,26,63,.4)}
+.row15 .inner-block.image img,.row6 .inner-block.image img{transition:transform .5s ease;aspect-ratio:16/10;object-fit:cover;width:100%;height:100%}
+.row15 a.permalink:hover .inner-block.image img,.row6 article:hover .inner-block.image img{transform:scale(1.04)}
+.row6 .inner-block.image{overflow:hidden}
+.row6 .term p,.row15 .terms p{border-radius:6px}
+
+/* Recruitment band (row3) */
+.row3 .blocks-container.bgcolor-blue{border-radius:20px!important;overflow:hidden}
+
+/* Contact (row13) */
+.row13 .nf-form-cont,.row13 .block.form{border-radius:16px}
+
+/* Floating contact buttons & reCAPTCHA badge (shows a domain error on GitHub Pages) */
+aside.sidebar{border-radius:12px;overflow:hidden;box-shadow:0 8px 24px -10px rgba(0,26,63,.4)}
+.grecaptcha-badge{visibility:hidden!important}
+
+/* Footer */
+footer a,.footer a{transition:color .2s ease}
+
+/* Mobile fixes */
+@media (max-width:767px){
+  .row1.bg-image .bg-image:after{background:linear-gradient(180deg,rgba(0,26,63,.25),rgba(0,26,63,.6))}
+  .row1 .block.button-repeater{display:flex;flex-wrap:wrap;gap:10px}
+  .row1 .block.button-repeater a.button{margin:0!important}
+  .row5 .blocks-group.extra .block.item{border-radius:14px!important}
+  .row7 .block.repeater article.item:hover{box-shadow:none}
+  .row6 .overview article .inner-block.image{max-height:240px}
+  aside.sidebar{transform:scale(.9);transform-origin:right center;opacity:.92}
+  section.row{overflow-x:clip}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+@media (max-width:767px){.row1 h1{letter-spacing:-.01em}}
+.responsive-menu-toggle,.menu-toggle,.hamburger,button[class*="toggle"]{border-radius:8px}
