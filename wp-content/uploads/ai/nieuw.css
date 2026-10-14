@@ -1,0 +1,23 @@
+/* Agentic AI dienstkaart: 5 kolommen, paars, glans + NIEUW-sticker */
+section.row.flex-content.row5 .full-row .blocks-container.below .blocks-group.extra .block.item.purple{background-color:rgba(41,35,92,.14)}
+section.row.flex-content.row5 .full-row .blocks-container.below .blocks-group.extra .block.item.purple .inner-block.image{background-color:#29235c}
+@media (min-width:1200px){section.row.flex-content.row5 .full-row .blocks-container.below .blocks-group.extra{grid-template-columns:repeat(5,minmax(0,1fr));--columnGap:16px}
+section.row.flex-content.row5 .full-row .blocks-container.below .blocks-group.extra .block.item{padding-left:22px;padding-right:22px}
+section.row.flex-content.row5 .full-row .blocks-container.below .blocks-group.extra .block.item h4{font-size:17px!important;word-break:keep-all!important;overflow-wrap:normal!important;hyphens:none!important}}
+@media (min-width:1025px) and (max-width:1199px){section.row.flex-content.row5 .full-row .blocks-container.below .blocks-group.extra{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.block.item.is-new{position:relative;overflow:hidden;isolation:isolate}
+.block.item.is-new:after{content:"";position:absolute;top:-20%;bottom:-20%;left:0;width:45%;background:linear-gradient(105deg,transparent 0,rgba(255,255,255,0) 20%,rgba(255,255,255,.55) 50%,rgba(255,255,255,0) 80%,transparent 100%);transform:translateX(-160%) skewX(-12deg);animation:dis-glint 5.5s ease-in-out 1.2s infinite;pointer-events:none;z-index:2}
+@keyframes dis-glint{0%{transform:translateX(-160%) skewX(-12deg)}35%,100%{transform:translateX(330%) skewX(-12deg)}}
+.block.item.is-new .new-kicker{display:flex;align-items:center;gap:6px;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#29235c;margin:0 0 2px}
+.block.item.is-new .new-kicker svg{width:13px;height:13px;fill:#fbb815}
+.dis-nieuw{position:absolute;top:9px;right:10px;z-index:3;background:#fbb815;color:#001a3f;font:700 11px/1 "Poppins",sans-serif;letter-spacing:.08em;padding:6px 10px;border-radius:999px;transform:rotate(8deg);box-shadow:0 3px 8px rgba(0,26,63,.22);animation:dis-pulse 2.8s ease-in-out infinite;pointer-events:none}
+@keyframes dis-pulse{0%,100%{transform:rotate(8deg) scale(1)}50%{transform:rotate(8deg) scale(1.07)}}
+@media (prefers-reduced-motion:reduce){.block.item.is-new:after{animation:none;display:none}.dis-nieuw{animation:none}}
+/* Hero-knop Agentic AI */
+.button-repeater .button.dis-ai-btn{position:relative;overflow:visible;isolation:isolate;border-color:transparent!important;background:linear-gradient(#0f2a4d,#0f2a4d) padding-box,linear-gradient(120deg,#319fda,#7db928 55%,#fbb815) border-box;border-style:solid;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.dis-ai-btn .dis-ai-shine{position:absolute;inset:0;border-radius:inherit;overflow:hidden;z-index:-1;pointer-events:none}
+.dis-ai-btn .dis-ai-shine::before{content:"";position:absolute;top:0;bottom:0;left:-60%;width:45%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.28),transparent);transform:skewX(-18deg);animation:dis-ai-sweep 4.5s ease-in-out infinite 1s}
+@keyframes dis-ai-sweep{0%,60%{left:-60%}100%{left:130%}}
+.dis-nieuw.dis-nieuw-sm{top:-10px;right:-12px;font-size:9.5px;padding:4px 7px}
+@media (max-width:600px){.button-repeater{flex-wrap:wrap;row-gap:12px}}
+@media (prefers-reduced-motion:reduce){.dis-ai-btn .dis-ai-shine::before{animation:none;display:none}.dis-nieuw-sm{animation:none}}
