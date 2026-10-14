@@ -1,0 +1,16 @@
+.minimal-breadcrumbs{
+
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+
+.minimal-breadcrumbs li{
+
+	display: inline-block;
+}
+
+.minimal-breadcrumbs li.separator{
+
+    display: inline;
+}
